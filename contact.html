@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Adarsh ITI College</title>
+    <meta name="description" content="Get in touch with Adarsh ITI College for admissions, courses, and campus information.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons (Boxicons) -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        /* Page-scoped helpers only (no changes to your global style.css) */
+        .contact-map {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 ratio */
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin-top: 2rem;
+        }
+        .contact-map iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .contact-floats {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            z-index: 4000;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .contact-whatsapp-float,
+        .contact-call-float {
+            border-radius: 999px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+            transition: transform 0.2s ease;
+        }
+        .contact-whatsapp-float i {
+            font-size: 1.6rem;
+        }
+        .contact-call-float {
+            padding: 0.85rem 1rem;
+            gap: 0.5rem;
+            color: white;
+            font-weight: 700;
+        }
+        .contact-whatsapp-float:hover,
+        .contact-call-float:hover {
+            transform: translateY(-3px);
+        }
+        .contact-course-select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            background: transparent;
+            font-size: 1rem;
+            color: var(--dark-text);
+            outline: none;
+        }
+        .contact-course-select:focus {
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 15px var(--neon-blue), inset 0 0 5px var(--neon-blue);
+        }
+        @media (min-width: 768px) {
+            .contact-floats {
+                right: 24px;
+                bottom: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <a href="#" class="logo">
+            <i class='bx bxs-graduation'></i> ITI College
+        </a>
+        <div class="menu-icon" id="menu-icon"><i class='bx bx-menu'></i></div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="courses.html" class="nav-link">Courses</a>
+            <a href="admissions.html" class="nav-link">Admissions</a>
+            <a href="placements.html" class="nav-link">Placements</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="login frame.html" target="_blank" class="btn login-btn">Student Login</a>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact scroll-reveal">
+        <div class="section-title">
+            <h2><span class="gradient-text">Contact</span> Us</h2>
+            <p>Have questions? We'd love to hear from you. Fill out the form below.</p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h3 style="color: var(--dark-bg); font-size: 1.5rem; margin-bottom: 1.5rem;">Adarsh ITI College</h3>
+
+                <div class="info-item">
+                    <i class='bx bx-map'></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>123 Education Drive, Tech Park Area,<br> Mumbai, Maharashtra - 400001</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class='bx bx-phone'></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>
+                            <a href="tel:+919876543210" style="color: inherit; text-decoration: underline;">
+                                +91 98765 43210
+                            </a>
+                            <br>
+                            <a href="tel:+919123456789" style="color: inherit; text-decoration: underline;">
+                                +91 91234 56789
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class='bx bx-envelope'></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>
+                            <a href="mailto:info@adarshiti.edu.in" style="color: inherit; text-decoration: underline;">
+                                info@adarshiti.edu.in
+                            </a>
+                            <br>
+                            <a href="mailto:admissions@adarshiti.edu.in" style="color: inherit; text-decoration: underline;">
+                                admissions@adarshiti.edu.in
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class='bx bx-time'></i>
+                    <div>
+                        <h4>Office Hours</h4>
+                        <p>Mon - Sat: 9:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">Full Name</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="tel" id="phone" placeholder=" " required>
+                        <label for="phone">Phone Number</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Email Address</label>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="course" style="position: static; display: block; margin-bottom: 0.6rem; color: #94a3b8; font-weight: 600;">
+                            Course Interested In
+                        </label>
+                        <select id="course" class="contact-course-select">
+                            <option value="electrician">Electrician</option>
+                            <option value="fitter">Fitter</option>
+                            <option value="welder">Welder</option>
+                            <option value="copa">COPA</option>
+                            <option value="others">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea id="message" rows="4" placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="btn primary-btn submit-btn btn-ripple">
+                        Submit <i class='bx bx-send'></i>
+                    </button>
+
+                    <div class="success-message" id="successMsg" style="display: none; color: #28a745; margin-top: 15px; font-weight: 500;">
+                        Message sent successfully!
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="contact-map" aria-label="Google map location">
+            <iframe
+                loading="lazy"
+                src="https://www.google.com/maps?q=Mumbai%20University&output=embed"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Floating Buttons -->
+    <div class="contact-floats" aria-hidden="false">
+        <a
+            class="contact-whatsapp-float"
+            href="https://wa.me/919876543210?text=Hello%20Adarsh%20ITI%20College%2C%20I%20need%20information%20about%20admissions."
+            target="_blank"
+            rel="noopener noreferrer"
+            style="width: 52px; height: 52px; background: #25D366; color: white;">
+            <i class='bx bxl-whatsapp'></i>
+        </a>
+
+        <a
+            class="contact-call-float"
+            href="tel:+919876543210"
+            style="background: var(--primary-orange); width: fit-content;">
+            <i class='bx bx-phone'></i>
+            <span>Call Now</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>About ITI</h3>
+                <p>Adarsh ITI College is a leading technical institute providing industry-standard training and skill development to empower youth for professional excellence.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="placements.html">Placements</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Our Courses</h3>
+                <ul>
+                    <li><a href="courses.html">Electrician</a></li>
+                    <li><a href="courses.html">Fitter</a></li>
+                    <li><a href="courses.html">Welder</a></li>
+                    <li><a href="courses.html">COPA</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                 <ul class="footer-contact-info">
+                    <li><i class='bx bx-map'></i> Bendo (Mirzapur-Naini road) Karchhana prayagraj Uttar Pradesh 212301</li>
+                    <li><i class='bx bx-phone'></i> +91 7839551067</li>
+                    <li><i class='bx bx-envelope'></i> adarshiti@gmail.com</li>
+                </ul> 
+            </div>
+        </div>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin-bottom: 2rem;">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Adarsh ITI College. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+

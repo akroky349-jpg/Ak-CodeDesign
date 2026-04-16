@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Adarsh ITI College</title>
+    <meta name="description" content="Explore Adarsh ITI College campus life, workshops, student moments, and events through our gallery.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons (Boxicons) -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <a href="#" class="logo">
+            <i class='bx bxs-graduation'></i> ITI College
+        </a>
+        <div class="menu-icon" id="menu-icon"><i class='bx bx-menu'></i></div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="courses.html" class="nav-link">Courses</a>
+            <a href="admissions.html" class="nav-link">Admissions</a>
+            <a href="placements.html" class="nav-link">Placements</a>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="login frame.html" target="_blank" class="btn login-btn">Student Login</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gallery-hero">
+        <div class="gallery-hero-content text-center fade-up">
+            <h1>ITI Gallery</h1>
+            <p>Campus life, workshop sessions, student achievements, and events in one place.</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="iti-gallery-filters-section">
+        <div class="iti-gallery-container">
+            <div class="iti-gallery-filters" role="tablist" aria-label="Gallery filters">
+                <button type="button" class="iti-gallery-filter-btn is-active" data-filter="all">All</button>
+                <button type="button" class="iti-gallery-filter-btn" data-filter="campus">Campus</button>
+                <button type="button" class="iti-gallery-filter-btn" data-filter="workshop">Workshop</button>
+                <button type="button" class="iti-gallery-filter-btn" data-filter="students">Students</button>
+                <button type="button" class="iti-gallery-filter-btn" data-filter="events">Events</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="iti-gallery-grid-section">
+        <div class="iti-gallery-container">
+            <div class="iti-gallery-grid" id="itiGalleryGrid">
+                <figure class="iti-gallery-card" data-category="campus">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/Event3.jpeg"
+                        data-full="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1800&q=75"
+                        alt="College campus at daytime"
+                        data-title="Campus"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Campus</h3>
+                            <p>Campus moments</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="iti-gallery-card" data-category="workshop">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/Event4.jpeg"
+                        data-full="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1800&q=75"
+                        alt="Workshop tools and equipment"
+                        data-title="Workshop"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Workshop</h3>
+                            <p>Hands-on training</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="iti-gallery-card" data-category="students">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/Event2.jpeg"
+                        data-full="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1800&q=75"
+                        alt="Students collaborating"
+                        data-title="Students"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Students</h3>
+                            <p>Learning together</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="iti-gallery-card" data-category="events">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/Event.jpeg"
+                        data-full="https://images.unsplash.com/photo-1522741755183-51b9bd1d8c2a?auto=format&fit=crop&w=1800&q=75"
+                        alt="Event hall with people"
+                        data-title="Events"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Events</h3>
+                            <p>Campus celebrations</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="iti-gallery-card" data-category="campus">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/Event5.jpeg"
+                        data-full="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1800&q=75"
+                        alt="Students walking through campus"
+                        data-title="Campus"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Campus</h3>
+                            <p>Everyday moments</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="iti-gallery-card" data-category="workshop">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/Event.jpeg"
+                        data-full="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1800&q=75"
+                        alt="Workshop engineering activity"
+                        data-title="Workshop"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Workshop</h3>
+                            <p>Practical sessions</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="iti-gallery-card" data-category="students">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/celibration.jpeg"
+                        data-full="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1800&q=75"
+                        alt="Students in a classroom environment"
+                        data-title="Students"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Students</h3>
+                            <p>Guided training</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="iti-gallery-card" data-category="events">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/tiranga.jpeg"
+                        data-full="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1800&q=75"
+                        alt="Community event with stage lights"
+                        data-title="Events"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Events</h3>
+                            <p>Guest sessions</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="iti-gallery-card" data-category="campus">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/Event2.jpeg"
+                        data-full="https://images.unsplash.com/photo-1563720223185-4d1c0b4e2e4a?auto=format&fit=crop&w=1800&q=75"
+                        alt="Campus greenery"
+                        data-title="Campus"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Campus</h3>
+                            <p>Green learning spaces</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="iti-gallery-card" data-category="workshop">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/workshop.jpeg"
+                        data-full="https://images.unsplash.com/photo-1581091215367-59ab6c6be4e4?auto=format&fit=crop&w=1800&q=75"
+                        alt="Students working with equipment"
+                        data-title="Workshop"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Workshop</h3>
+                            <p>Build & learn</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="iti-gallery-card" data-category="students">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/teacher.jpeg"
+                        data-full="https://images.unsplash.com/photo-1541178731752-4adf0b1b9e0b?auto=format&fit=crop&w=1800&q=75"
+                        alt="Student presenting project"
+                        data-title="Students"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Students</h3>
+                            <p>Project presentations</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="iti-gallery-card" data-category="events">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/Event1.jpeg"
+                        data-full="images/student.jpeg"
+                        alt="Team cheering during event"
+                        data-title="Events"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Events</h3>
+                            <p>Achievements & pride</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="iti-gallery-card" data-category="campus">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/ground.jpeg"
+                        data-full="images/ground.jpeg"
+                        alt="Students and staff during campus drive"
+                        data-title="Campus"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Campus</h3>
+                            <p>Campus drive moments</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="iti-gallery-card" data-category="workshop">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/group.jpeg"
+                        data-full="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1800&q=75"
+                        alt="Workshop and practical learning space"
+                        data-title="Workshop"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Workshop</h3>
+                            <p>Hands-on learning</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="iti-gallery-card" data-category="students">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/student.jpeg"
+                        data-full="images/student.jpeg"
+                        alt="Student sharing thoughts after training"
+                        data-title="Students"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Students</h3>
+                            <p>Student achievements</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="iti-gallery-card" data-category="events">
+                    <img
+                        class="iti-gallery-img"
+                        src="images/Event1.jpeg"
+                        data-full="images/student.jpeg"
+                        alt="Event success celebration"
+                        data-title="Events"
+                    >
+                    <figcaption class="iti-gallery-overlay">
+                        <div>
+                            <h3>Events</h3>
+                            <p>Celebrating milestones</p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="iti-gallery-lightbox" id="itiGalleryLightbox" aria-hidden="true">
+        <button type="button" class="iti-gallery-lightbox-close" id="itiGalleryLightboxClose" aria-label="Close lightbox">
+            <i class='bx bx-x'></i>
+        </button>
+        <div class="iti-gallery-lightbox-content">
+            <img id="itiGalleryLightboxImg" src="" alt="">
+            <div class="iti-gallery-lightbox-caption" id="itiGalleryLightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+          <div class="footer-grid">
+            <div class="footer-column">
+                <h3>About ITI</h3>
+                <p>Adarsh ITI College is a leading technical institute providing industry-standard training and skill development to empower youth for professional excellence.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="placements.html">Placements</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Our Courses</h3>
+                <ul>
+                    <li><a href="courses.html">Electrician</a></li>
+                    <li><a href="courses.html">Fitter</a></li>
+                    <li><a href="courses.html">Welder</a></li>
+                    <li><a href="courses.html">COPA</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="footer-contact-info">
+                    <li><i class='bx bx-map'></i> Bendo (Mirzapur-Naini road) Karchhana prayagraj Uttar Pradesh 212301</li>
+                    <li><i class='bx bx-phone'></i> +91 7839551067</li>
+                    <li><i class='bx bx-envelope'></i> adarshiti@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin-bottom: 2rem;">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Adarsh ITI College. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
